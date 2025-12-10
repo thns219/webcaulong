@@ -1,0 +1,93 @@
+
+       body {
+        font-family: 'Segoe UI', sans-serif;
+        background: url(https://media.gettyimages.com/id/2084534574/photo/yonex-all-england-open-badminton-championships-2024-day-3.jpg?s=2048x2048&w=gi&k=20&c=tEnYj-Mt8sw5D5aAeNiouoIH21qauXG6CwvsIfLw8dQ=) no-repeat;
+        background-size: cover;   /* Làm cho ảnh nền (nếu có) phủ kín toàn bộ vùng nền của phần tử body, giữ tỉ lệ, có thể bị cắt mép.*/
+        background-position: center; /* Căn giữa ảnh nền theo cả chiều ngang và chiều dọc.*/
+        display: flex;  /* Kích hoạt hệ thống Flexbox để căn chỉnh con bên trong body.*/
+        justify-content: center; /*Căn giữa theo chiều ngang (trục chính của flex). */
+        align-items: center; /* Căn giữa theo chiều dọc (trục phụ của flex).*/
+        height: 100vh; /* Chiều cao bằng 100% chiều cao của màn hình trình duyệt.*/
+        margin: 0; /* Xóa khoảng trắng mặc định quanh body của trình duyệt.*/
+    }
+
+    .login-container { 
+        background: rgba(255, 255, 255, 0.1); /* Nền trắng trong suốt 10% (mờ), giúp tạo hiệu ứng kính mờ.*/
+        backdrop-filter: blur(5px); /*Làm mờ nền phía sau hộp login-container, tạo hiệu ứng "glassmorphism". */
+        border: 2px solid #26c6da; /* Viền dày 2px màu xanh lam nhạt (#26c6da).*/
+        border-radius: 15px; /* Bo góc 15px, làm các cạnh tròn mềm mại.*/
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Bóng đổ nhẹ phía dưới (8px) và mờ (16px), màu đen mờ (10%)..*/
+        padding: 40px 30px; /* Khoảng cách bên trong (trên dưới, trái phải):*/
+        width: 100%; /* Chiều rộng 100% theo khối cha, nhưng giới hạn tối đa là 400px.*/
+        max-width: 400px; 
+        text-align: center; /* Căn giữa tất cả nội dung văn bản bên trong hộp.*/
+        animation: fadeIn 0.5s ease-in-out;
+        }
+
+    .login-container h2 {
+        color: #fff; 
+        margin-bottom: 20px; /* lề dưới */
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 90%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #b2ebf2;
+        border-radius: 50px;
+        font-size: 16px;
+    }
+
+/* thông báo đăng nhập lỗi */
+    .error-notification {
+        color: #fff;
+        background-color: rgba(255, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+/* nút đăng nhập */
+    .login-container button {
+        background-color: #00796b;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .login-container button:hover {
+        background-color: #004d40;
+    }
+
+    .login-container p {
+        color: #fff;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .login-container a {
+        color: #fff;
+    }
+.remember-btn{
+    text-align: center; 
+    margin: 1px auto;
+
+}
+
+@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
